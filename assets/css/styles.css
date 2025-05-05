@@ -61,7 +61,7 @@ header {
         /* width: clamp(); */
         box-sizing: content-box;
         min-width: 100px;
-        max-width: 150px;
+        max-width: 200px;
         padding-block: 1rem;
         padding-inline: 2rem;
         z-index: 999;
