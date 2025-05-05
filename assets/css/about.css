@@ -1,0 +1,16 @@
+.hero {
+    border: 10px solid;
+    display: grid;
+    grid-template-areas: "stack";
+    color: #333333;
+}
+
+.hero-image {
+    grid-area: stack;
+    border: 10px solid red;
+}
+
+.hero-text {
+    grid-area: stack;
+    border: 10px solid blue;
+}
