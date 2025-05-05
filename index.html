@@ -6,24 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Infinity MK</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/home.css">
 </head>
 
 <body>
     <header>
+
+        <!-- Logo -->
         <div>
             <img src="assets/images/logo7.png" alt="infinity logo">
         </div>
-        <!-- TODO: Add the menu and implement sr-only class -->
-        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false">
-            <span class="sr-only"></span>
+
+        <!-- Menu button -->
+        <button class="button-one" aria-controls="primary-navigation" aria-expanded="false"><span
+                class="sr-only">Menu</span>
+            <svg class="hamburger" viewBox="0 0 100 100" width="50" fill="var(--button-color)">
+
+                <!-- Top -->
+                <rect class="line top" width="80" height="8" x="10" y="25" rx="7">
+                </rect>
+
+                <!-- Middle -->
+                <rect class="line middle" width="80" height="8" x="10" y="45" rx="7">
+                </rect>
+
+                <!-- Bottom -->
+                <rect class="line bottom" width="80" height="8" x="10" y="65" rx="7">
+                </rect>
+
+            </svg>
         </button>
 
+        <!-- Navigation -->
         <nav>
-            <ul id="primary-navigation" class="primary-navigation" data-visible="false">
+            <ul id="primary-navigation" data-visible="false">
                 <li class="active">
                     <a href="/index.html">
                         Home
@@ -51,29 +72,44 @@
                 </li>
             </ul>
         </nav>
+
     </header>
+
+    <!-- Main -->
     <main>
+
+        <!-- Hero Section -->
         <section class="section hero">
             <!-- Look great. Feel amazing.
 Your local Putney destination for expert hair, nail, and beauty services. -->
             <div>
-                <p>Look great.</p> 
-                <p>Feel Amazing.</p>
+                <p>Look great.</p>
+                <p>Feel amazing.</p>
             </div>
 
             <!-- <div>
                 <img src="assets/images/hero7.png" alt="hero image">
             </div> -->
         </section>
+
+        <!-- About section -->
         <section class="section about">
             About
         </section>
 
 
     </main>
+
+    <!-- Footer -->
     <footer>
-        <p><span>Hair & Nails & Beauty Salon</span><span>195A Upper Richmond Road</span><span>Putney, London, SW15 6SG</span></p>
+        <p>
+            <span>Hair & Nails & Beauty Salon</span>
+            <span>195A Upper Richmond Road</span>
+            <span>Putney, London, SW15 6SG</span>
+        </p>
     </footer>
+
+    <!-- Script -->
     <script src="./assets/script/script.js"></script>
 </body>
 
