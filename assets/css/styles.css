@@ -39,6 +39,7 @@ body {
     /* padding-inline: 2em; */
     /* font-family: sans-serif; */
     font-family: "Expletus sans", sans-serif;
+    font-size: 16px;
     color: var(--font-color);
     min-height: 100vh;
     min-height: 100dvh;
@@ -51,6 +52,7 @@ body {
 header {
 
     /* header for the class primary header */
+    padding: 1em 2em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,12 +60,11 @@ header {
 
     /* Logo */
     div {
-        /* width: clamp(); */
+        width: clamp(7rem, 20vw, 8rem);
+
         box-sizing: content-box;
-        min-width: 100px;
-        max-width: 200px;
-        padding-block: 1rem;
-        padding-inline: 2rem;
+        /* padding-block: 1rem; */
+        /* padding-inline: 2rem; */
         z-index: 999;
     }
 
@@ -107,32 +108,7 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; */
-
-    .hero {
-        min-height: 90vh;
-        background-image: url("../images/hero7.png");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
-        /* justify-content: flex-start; */
-        align-items: flex-start;
-        /* background-color: rgba(255, 255, 255, .1); */
-
-        div {
-            margin-inline-start: 2rem;
-            margin-block-start: 20vh;
-            backdrop-filter: blur(2px);
-            padding: .75rem 1rem;
-
-            p {
-                font-size: clamp(3rem, 5vw, 5rem);
-                color: #333333;
-                line-height: 1.5;
-            }
-        }
-
-    }
+    
 }
 
 /* Footer */
@@ -150,17 +126,25 @@ footer {
 @media (max-width: 50em) {
 
     header {
+        position: sticky;
+        top: 0;
+        left: 0;
+        /* position: relative; */
 
         button {
             display: block;
             position: absolute;
-            top: .7rem;
+            top: 1.2rem;
             right: 2rem;
             z-index: 999;
             border: none;
             background: transparent;
+            /* background: black; */
 
+
+            /* Hamburger */
             .hamburger {
+                /* background-color: red; */
 
                 .line {
                     transition: y 1s linear forwards;

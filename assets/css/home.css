@@ -4,4 +4,32 @@ img {
     width: 100%;
 }
 
+main {
+    .hero {
+        min-height: 90vh;
+        background-image: url("../images/hero7.png");
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        /* justify-content: flex-start; */
+        align-items: flex-start;
+        /* background-color: rgba(255, 255, 255, .1); */
+
+        div {
+            /* margin-inline-start: 2rem; */
+            /* margin-block-start: 20vh; */
+            /* backdrop-filter: blur(100px); */
+            padding: .75rem 1rem;
+
+            p {
+                font-size: clamp(3rem, 5vw, 5rem);
+                color: #333333;
+                line-height: 1.5;
+            }
+        }
+
+    }
+}
+
 /* 320.728 px 1053 px */
