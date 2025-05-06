@@ -40,6 +40,7 @@ body {
     /* font-family: sans-serif; */
     font-family: "Expletus sans", sans-serif;
     font-size: 16px;
+    line-height: 1.5;
     color: var(--font-color);
     min-height: 100vh;
     min-height: 100dvh;
@@ -101,25 +102,43 @@ header {
 }
 
 /* Main */
-/* main {
-    margin-block-start: 1em;
+main {
+    /* margin-block-start: 1em;
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    min-height: 100vh;
+    min-height: 100dvh;
     
-} */
+}
 
 /* Footer */
 footer {
     color: var(--font-color);
     margin: 0 auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: .5em;
+
+    div {
+        /* border: 5px solid; */
+        max-width: 120px;
+        margin: 0 auto;
+    }
 
     p {
         display: flex;
         flex-direction: column;
         line-height: 1.4;
+        justify-content: center;
+
+        span {
+            text-align: center;
+        }
     }
 }
 

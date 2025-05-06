@@ -6,6 +6,12 @@ img {
 }
 
 main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    margin-block-end: 2em;
+
+    /* Hero section */
     .hero {
         min-height: 90vh;
 
@@ -33,7 +39,7 @@ main {
 
                 img {
                     object-fit: cover;
-                    
+
                 }
             }
 
@@ -54,6 +60,74 @@ main {
             }
         }
 
+    }
+
+    /* About section */
+    .about {
+        display: flex;
+        flex-direction: row-reverse;
+        /* background-color: white; */
+        justify-content: end;
+        gap: 2rem;
+
+        div {
+
+            &:first-child {
+                max-width: 700px;
+                aspect-ratio: 1/1;
+
+            }
+
+            &:last-child {
+                align-self: center;
+                max-width: 500px;
+
+                h2 {
+                    text-align: right;
+                    font-size: 2rem;
+                    margin-block-end: 1em;
+                }
+
+                p {
+                    text-align: right;
+                    font-size: 1.2rem;
+                    /* line-height: 1.5; */
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    main {
+
+        .about {
+            /* background-color: red; */
+            display: grid;
+            grid-template-areas: "about-stack";
+            div {
+
+                &:first-child {
+                    grid-area: about-stack;
+                }
+
+                &:last-child {
+                    justify-self: center;
+                    padding: 1em;
+                    grid-area: about-stack;
+                    backdrop-filter: blur(2px);
+                    color: white;
+
+                    h2 {
+                        text-align: center;
+                    }
+
+                    p {
+                        text-align: left;
+                    }
+                }
+            }
+        }
     }
 }
 
