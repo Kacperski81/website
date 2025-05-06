@@ -2,25 +2,50 @@
 img {
     display: block;
     width: 100%;
+    height: 100%;
 }
 
 main {
     .hero {
         min-height: 90vh;
-        background-image: url("../images/hero.jpg");
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        display: flex;
+
+        /* new code */
+        display: grid;
+        grid-template-areas: "hero-stack";
+
+
+        /* previous code */
+        /* background-image: url("../images/hero.jpg"); */
+        /* background-position: center; */
+        /* background-size: cover; */
+        /* background-repeat: no-repeat; */
+        /* display: flex; */
         /* justify-content: flex-start; */
-        align-items: flex-start;
+        /* align-items: flex-start; */
         /* background-color: rgba(255, 255, 255, .1); */
 
         div {
+            /* new code */
+            grid-area: hero-stack;
+
+            &:first-child {
+                /* background-color: red; */
+
+                img {
+                    object-fit: cover;
+                    
+                }
+            }
+
+            &:last-child {
+                padding: .75em 1em;
+            }
+
+            /* previous code */
             /* margin-inline-start: 2rem; */
             /* margin-block-start: 20vh; */
             /* backdrop-filter: blur(100px); */
-            padding: .75rem 1rem;
+            /* padding: .75rem 1rem; */
 
             p {
                 font-size: clamp(3rem, 5vw, 5rem);
