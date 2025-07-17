@@ -1,0 +1,75 @@
+body {
+    /* font-size: 1.5rem; */
+}
+
+main {
+    background-image: url("/assets/images/background_2.png");
+    display: flex;
+    /* justify-content: center; */
+}
+
+.wrapper {
+    flex-grow: 1;
+    /* max-width: 50rem; */
+    margin-inline: auto;
+    padding-inline: 1rem;
+}
+
+.accordion {
+    --_button-size: 3rem;
+    --_panel-padding: 0.75rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    padding-block: 1rem;
+}
+
+.accordion * {
+    margin: 0;
+    display: flex;
+}
+
+.accordion-panel {
+    position: relative;
+    isolation: isolate;
+    flex-basis: calc((var(--_panel-padding) * 2) + var(--_button-size));
+    overflow: hidden;
+    padding: var(--_panel-padding);
+    border-radius: calc(((var(--_panel-padding) * 2) + var(--_button-size)) / 2);
+
+    /* background */
+    background-color: rgba(255,255,255, 0.3);
+    backdrop-filter: blur(3px);
+
+    transition: flex-basis 500ms;
+}
+
+.accordion-panel:has([aria-expanded="true"]) {
+    flex-basis: clamp(50rem, 80vw, 80rem);
+}
+
+.accordion-trigger {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    font-size: 2.5rem;
+    writing-mode: vertical-lr;
+    flex-direction: row;
+    text-orientation: sideways;
+    color: #333333;
+    background: transparent;
+    border: 0;
+}
+
+.accordion-content > p {
+    transform: translateY(2rem);
+    opacity: 0;
+
+    transition: opacity 250ms, transform 250ms;
+}
+
+.accordion-panel:has([aria-expanded="true"]) .accordion-content > p {
+    transform: translateY(0);
+    opacity: 1;
+}

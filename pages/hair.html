@@ -11,6 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/hair.css">
 </head>
 
 <body>
@@ -70,10 +71,82 @@
         </nav>
 
     </header>
+
+    <!-- main -->
     <main>
-        <h2>Hair</h2>
-        
+
+        <section class="wrapper">
+
+            <div class="accordion">
+                <!-- Service -->
+                <div class="accordion-panel">
+
+                    <h2 id="panel1-heading">
+
+                        <button class="accordion-trigger" aria-controls="panel1-content" aria-expanded="true">
+                            <span id="panel1-title">Service</span>
+                        </button>
+
+                    </h2>
+
+                    <div class="accordion-content" id="panel1-content" aria-labelledby="panel1-heading"
+                        aria-hidden="false" role="region">
+                        <p>
+                            <h3>Service</h3>
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Products -->
+                <div class="accordion-panel">
+                    <h2 id="panel2-heading">
+
+                        <button class="accordion-trigger" aria-controls="panel2-content" aria-expanded="false">
+                            <span id="panel1-title">Products</span>
+                        </button>
+
+                    </h2>
+
+                    <div class="accordion-content" id="panel2-content" aria-labelledby="panel2-heading"
+                        aria-hidden="true" role="region">
+                        <p>
+                            <h3>Products</h3>
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <!-- Gallery -->
+                <div class="accordion-panel">
+
+                    <h2 id="panel3-heading">
+
+                        <button class="accordion-trigger" aria-controls="panel3-content" aria-expanded="false">
+                            <span id="panel3-title">Gallery</span>
+                        </button>
+
+                    </h2>
+
+                    <div class="accordion-content" id="panel3-content" aria-labelledby="panel3-heading"
+                        aria-hidden="false" role="region">
+                        <p>
+                            <h3>Gallery</h3>
+                        </p>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
     </main>
+
+    <!-- footer -->
     <footer>
         <div>
             <img src="../assets/images/logo7.png" alt="logo">

@@ -5,10 +5,15 @@
     /* --font-color: #ffffff */
 }
 
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 /* Image resets */
@@ -34,6 +39,7 @@ html {
 }
 
 body {
+    /* background-color: #F8F8F8; */
     max-width: 1550px;
     margin: 0 auto;
     /* padding-inline: 2em; */

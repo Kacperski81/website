@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hair - Infinity MK</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Expletus+Sans:ital,wght@0,400..700;1,400..700&family=Sofia+Sans+Semi+Condensed:ital,wght@0,1..1000;1,1..1000&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/hair.css">
+</head>
+
+<body>
+    <header>
+
+        <!-- Logo -->
+        <div>
+            <img src="../assets/images/logo7.png" alt="infinity logo">
+        </div>
+
+        <!-- Menu button -->
+        <button class="button-one" aria-controls="primary-navigation" aria-expanded="false">
+            <span class="sr-only">Menu</span>
+
+            <!-- Hamburger -->
+            <svg class="hamburger" viewBox="0 0 100 100" width="25" fill="var(--button-color)">
+
+                <!-- Top -->
+                <rect class="line top" width="80" height="10" x="10" y="20" rx="10">
+                </rect>
+
+                <!-- Middle -->
+                <rect class="line middle" width="80" height="10" x="10" y="40" rx="10">
+                </rect>
+
+                <!-- Bottom -->
+                <rect class="line bottom" width="80" height="10" x="10" y="60" rx="10">
+                </rect>
+
+            </svg>
+        </button>
+
+        <!-- Navigation -->
+        <nav>
+            <ul id="primary-navigation" data-visible="false">
+                <li class="active">
+                    <a href="/index.html">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/hair.html">
+                        Hair
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/nails.html">
+                        Nails
+                    </a>
+                </li>
+                <li>
+                    <a href="/pages/beauty.html">
+                        Beauty
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- main -->
+    <main>
+        <div class="hair-wrapper">
+
+            <section class="hair-nav">
+                <button id="service">Service</button>
+                <button id="product">Products</button>
+            </section>
+
+            <section class="hair-service">
+
+                <div class="hair-service-header">
+                    <h3>Service</h3>
+                    <h3>Price</h3>
+                </div>
+
+                <div class="accordion">
+                    <!-- Cut & Style -->
+                    <div class="accordion-panel">
+
+                        <h2 id="panel1-heading">
+
+                            <button class="accordion-trigger" aria-controls="panel1-content" aria-expanded="true">
+                                <span>Cut & Style</span>
+                            </button>
+
+                        </h2>
+
+                        <div class="accordion-content" id="panel1-content" aria-labelledby="panel1-heading"
+                            aria-hidden="false" role="region">
+                            <table>
+                                <tr>
+                                    <td>Ladies' Haircut</td>
+                                    <td>£70</td>
+                                </tr>
+                                <tr>
+                                    <td>Ladies' Restyle</td>
+                                    <td>£75</td>
+                                </tr>
+                                <tr>
+                                    <td>Gents Haircut</td>
+                                    <td>£46</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <!-- Colouring -->
+                    <div class="accordion-panel">
+
+                        <h2 id="panel2-heading">
+
+                            <button class="accordion-trigger" aria-controls="panel2-content" aria-expanded="false">
+                                <span>Colouring</span>
+                            </button>
+
+                        </h2>
+
+                        <div class="accordion-content" id="panel2-content" aria-labelledby="panel1-heading"
+                            aria-hidden="false" role="region">
+                            <table>
+                                <tr>
+                                    <td>Full Head Of Highlights or Balayage</td>
+                                    <td>£130</td>
+                                </tr>
+                                <tr>
+                                    <td>3/4 Head Of Highlights or Balayage</td>
+                                    <td>£120</td>
+                                </tr>
+                                <tr>
+                                    <td>1/2 Head Of Highlights or Balayage</td>
+                                    <td>£100</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                    <!-- Texturising & Straightening  -->
+                    <div class="accordion-panel">
+
+                        <h2 id="panel3-heading">
+
+                            <button class="accordion-trigger" aria-controls="panel3-content" aria-expanded="false">
+                                <span>Texturising & Straightening</span>
+                            </button>
+
+                        </h2>
+
+                        <div class="accordion-content" id="panel3-content" aria-labelledby="panel3-heading"
+                            aria-hidden="false" role="region">
+                            <table>
+                                <tr>
+                                    <td>Ladies' Haircut</td>
+                                    <td>£70</td>
+                                </tr>
+                                <tr>
+                                    <td>Ladies' Restyle</td>
+                                    <td>£75</td>
+                                </tr>
+                                <tr>
+                                    <td>Gents Haircut</td>
+                                    <td>£46</td>
+                                </tr>
+                            </table>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section class="hair-products">
+
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Shampoo</td>
+                        </tr>
+                        <tr>
+                            <td>Shampoo name</td>
+                            <td>£70</td>
+                        </tr>
+                        <tr>
+                            <td>Shampoo name</td>
+                            <td>£75</td>
+                        </tr>
+                        <tr>
+                            <td>Shampoo name</td>
+                            <td>£46</td>
+                        </tr>
+                        <tr>
+                            <td>Under 10 Years Old Girls</td>
+                            <td>£0</td>
+                        </tr>
+                        <tr>
+                            <td>11 to 16 Years Old Girls</td>
+                            <td>£0</td>
+                        </tr>
+                        <tr>
+                            <td>11 to 16 Years Old Boys</td>
+                            <td>£0</td>
+                        </tr>
+                        <tr>
+                            <td>Blow Dry Short Hair</td>
+                            <td>£0</td>
+                        </tr>
+                        <tr>
+                            <td>Blow Dry Medium Hair</td>
+                            <td>£0</td>
+                        </tr>
+                        <tr>
+                            <td>Blow Dry Long Hair</td>
+                            <td>£0</td>
+                        </tr>
+                        <tr>
+                            <td>Hair Up / Wedding Hair</td>
+                            <td>£0</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+            </section>
+
+        </div>
+
+    </main>
+    <footer>
+        <div>
+            <img src="../assets/images/logo7.png" alt="logo">
+        </div>
+        <p>
+            <span>Hair & Nails & Beauty Salon</span>
+            <span>195A Upper Richmond Rd</span>
+            <span>Putney, London</span>
+            <span>SW15 6SG</span>
+        </p>
+    </footer>
+    <script src="../assets/script/script.js"></script>
+</body>
+
+</html>
