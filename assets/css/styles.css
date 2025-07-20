@@ -36,11 +36,12 @@ img {
 
 html {
     background-image: url("../images/background.jpg");
+    background-size: cover;
 }
 
 body {
     /* background-color: #F8F8F8; */
-    max-width: 1550px;
+    max-width: 1700px;
     margin: 0 auto;
     /* padding-inline: 2em; */
     /* font-family: sans-serif; */
