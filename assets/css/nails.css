@@ -1,135 +1,112 @@
-main {
-    background-image: url("../images/nails-background.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    display: flex;
+body {
+    max-width: 100%;
 }
 
-.nails-wrapper {
-    /* background: red; */
-    flex-grow: 1;
-    margin-inline: auto;
-    padding-inline: 0.5rem;
+img {
+    max-width: 100%;
+    display: block;
 }
 
-/* Mobile first accordion */
 .accordion {
-    --_button-size: 2rem;
-    --_panel-padding: 0.5rem;
-
+    --_button-size: 3.4rem;
+    --_panel-padding: 0.75rem;
     display: flex;
     flex-direction: column;
-    gap: 0.3rem;
-    padding-block: 0.5rem;
-    /* min-height: 100%; */
-}
-
-.accordion * {
-    margin: 0;
+    gap: 1rem;
 }
 
 .accordion-panel {
-    display: flex;
-    flex-direction: column;
     position: relative;
     isolation: isolate;
-    flex-basis: calc((var(--_panel-padding) * 2) + var(--_button-size));
+    flex-basis: calc((var(--_panel-padding) * 2) + (var(--_button-size) / 2));
     overflow: hidden;
     padding: var(--_panel-padding);
-    border-radius: calc(((var(--_panel-padding) * 2) + var(--_button-size)) / 2);
-
-    /* background */
-    /* background-color: rgba(255, 255, 255, 0.3); */
-    backdrop-filter: blur(3px);
 
     transition: flex-basis 500ms;
 }
 
 .accordion-panel:has([aria-expanded="true"]) {
-    flex-basis: 80vh;
-    min-height: unset;
-    /* background-color: red; */
+    flex-basis: clamp(40rem, 70vh, 50rem);
+    overflow: auto;
 }
 
 .accordion-trigger {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    font-size: 1.2rem;
-    writing-mode: horizontal-tb;
-    color: #333333;
-    background: transparent;
     border: 0;
-    letter-spacing: .05rem;
-    justify-content: flex-start;
-    position: sticky;
-    inset: 0;
-
-    /* background-color: rgba(255,255,255,0.4); */
-    z-index: 1;
+    background: transparent;
+    font-size: calc(var(--_button-size) / 2);      
 }
 
-.accordion-content {
-    margin-inline-start: 0;
-    padding-top: 0.3rem;
-    overflow: auto;
+/* inner accordion */
+
+.service-wrapper {
+    /* background-color: red; */
+    max-width: 50rem;
+    margin-inline: auto;
+    padding-inline: 1rem;
 }
 
-/* Inner accordion */
 .service-accordion {
-    --_button-size: 1.5rem;
-    --_panel-padding: 0.3rem;
-
+    --_button-size: 3rem;
+    --_panel-padding: 0.75rem;
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
-    padding-block: 0.1rem;
-    position: relative;
-}  
+    gap: 1rem;
+    padding: var(--_panel-padding);
+}
 
 .service-accordion-panel {
-    display: flex;
-    flex-direction: column;
+    /* background */
+    background-color: rgba(255,255,255,0.2);
+    backdrop-filter: blur(2px);
+
+
     position: relative;
-    isolation: isolate;
     flex-basis: calc((var(--_panel-padding) * 2) + var(--_button-size));
     overflow: hidden;
     padding: var(--_panel-padding);
-    border-radius: calc(((var(--_panel-padding) *2) + var(--_button-size)) / 2);
-    font-size: 0.85rem;
-    transition: flex-basis 500ms;
-}
+    border-radius: calc(((var(--_panel-padding) * 2) + var(--_button-size)) / 2);
 
-.service-accordion-panel:has([aria-expanded="true"]) {
-    flex-basis: 50vh;
-    overflow: auto;
+    transition: flex-basis 500ms;
+
 }
 
 .service-accordion-trigger {
-    display: flex;
-    align-items: center;
-    gap: .2rem;
-    font-size: 1.1rem;
-    color: #333333;
     background: transparent;
     border: 0;
-    position: sticky;
-    inset: 0;
-    background-color: inherit;
-    z-index: 1;
+    padding: 0;
+    padding: var(--_panel-padding);
+    font-size: 1.5rem;
+}
+
+.service-accordion-panel:has([aria-expanded="true"]) {
+    flex-basis: clamp(15rem, 52vh, 25rem);
+    /* opacity: 1; */
+    overflow: auto;
 }
 
 .service-accordion-content {
-    display: flex;
-    flex-direction: column;
+    /* opacity: 0; */
+
+    transition: opacity 500ms;
 }
 
 table {
+    margin-top: .2rem;
     font-size: 0.8rem;
+
+    thead {
+        text-align: left;
+
+    }
 }
 
-table th, table td {
-    padding: 0.2rem 0.4rem;
-    text-align: left;
+.gallery-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    padding: .4rem;
 }
+
+
+
+

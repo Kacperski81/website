@@ -37,6 +37,7 @@ img {
 html {
     background-image: url("../images/background.jpg");
     background-size: cover;
+    scroll-behavior: smooth;
 }
 
 body {
