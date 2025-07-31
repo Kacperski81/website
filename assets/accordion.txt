@@ -1,0 +1,184 @@
+        <section class="nails-wrapper">
+            <div class="accordion">
+                <!-- Service -->
+                <div class="accordion-panel">
+                    <h2 id="panel1-heading">
+                        <button class="accordion-trigger" aria-controls="panel1-content" aria-expanded="true">
+                            <span id="panel1-title">Service</span>
+                        </button>
+                    </h2>
+                    <div class="accordion-content" id="panel1-content" aria-labelledby="panel1-heading"
+                        aria-hidden="false" role="region">
+                        <div class="service-wrapper">
+                            <div class="service-accordion">
+                                <!--  Manicure -->
+                                <div class="service-accordion-panel">
+                                    <h3 id="service-panel1-heading">
+                                        <button class="service-accordion-trigger" aria-controls="service-panel1-content"
+                                            aria-expanded="true">
+                                            <span id="service-panel1-title">
+                                                Manicure
+                                            </span>
+                                        </button>
+                                    </h3>
+                                    <div class="service-accordion-content" id="service-panel1-content"
+                                        aria-labelledby="service-panel1-heading" aria-hidden="false" role="region">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Service</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Hard Gel Extensions</td>
+                                                    <td>£46</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Infill (Gel or Protein Base)</td>
+                                                    <td>£38</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Nail Art (per finger)</td>
+                                                    <td>£2</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Broken Nail Repair (Extension - Hands or Feet)</td>
+                                                    <td>£5</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full Manicure (Protein Base, Shellac Colour, Cuticle & Skin
+                                                        Treatment)</td>
+                                                    <td>£46</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full Manicure (Shellac Colour, Cuticle & Skin Treatment)</td>
+                                                    <td>£40</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full Manicure (Normal Varnish, Cuticle & Skin Treatment)</td>
+                                                    <td>£28</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Manicure Tidy Up (Protein Base & Shellac Colour)</td>
+                                                    <td>£38</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Manicure Tidy Up (Shellac Colour Only)</td>
+                                                    <td>£30</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Manicure Tidy Up (Normal Varnish Colour Only)</td>
+                                                    <td>£15</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!--  Pedicure -->
+                                <div class="service-accordion-panel">
+                                    <h3 id="service-panel2-heading">
+                                        <button class="service-accordion-trigger" aria-controls="service-panel2-content"
+                                            aria-expanded="false">
+                                            <span id="service-panel2-title">Pedicure</span>
+                                        </button>
+                                    </h3>
+
+                                    <div class="service-accordion-content" id="service-panel2-content"
+                                        aria-labelledby="service-panel2-heading" aria-hidden="true" role="region">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Service</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Full Pedicure (Shellac Colour, Hard Skin Removal, Treatment)
+                                                    </td>
+                                                    <td>£46</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Full Pedicure (Normal Varnish Colour, Hard Skin Removal,
+                                                        Treatment)</td>
+                                                    <td>£32</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pedicure Tidy Up (Shellac Colour)</td>
+                                                    <td>£32</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Pedicure Tidy Up (Normal Varnish)</td>
+                                                    <td>£15</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                                <!-- Additional Services -->
+                                <div class="service-accordion-panel">
+                                    <h3 id="service-panel3-heading">
+                                        <button class="service-accordion-trigger" aria-controls="service-panel3-content"
+                                            aria-expanded="false">
+                                            <span id="service-panel3-title">Additional Services</span>
+                                        </button>
+                                    </h3>
+
+                                    <div class="service-accordion-content" id="service-panel3-content"
+                                        aria-labelledby="service-panel3-heading" aria-hidden="true" role="region">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>Service</th>
+                                                    <th>Price</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Shellac Removal</td>
+                                                    <td>£10</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Paraffin Treatment</td>
+                                                    <td>£5</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Gallery -->
+                <div class="accordion-panel">
+                    <h2 id="panel2-heading">
+                        <button class="accordion-trigger" aria-controls="panel2-content" aria-expanded="false">
+                            <span id="panel2-title">Gallery</span>
+                        </button>
+                    </h2>
+
+                    <div class="accordion-content" id="panel2-content" aria-labelledby="panel2-heading"
+                        aria-hidden="true" role="region">
+                        <div class="gallery-wrapper">
+
+                            <div>
+                                <img src="../assets/images/nails1.jpg" alt="nails gallery first picture">
+                            </div>
+                            <div>
+                                <img src="../assets/images/nails2.jpg" alt="nails gallery second picture">
+                            </div>
+                            <div>
+                                <img src="../assets/images/nails3.jpg" alt="nails gallery third picture">
+                            </div>
+                            <div>
+                                <img src="../assets/images/nails4.jpg" alt="nails gallery fourth picture">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </section>

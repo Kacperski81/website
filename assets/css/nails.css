@@ -1,10 +1,71 @@
 body {
-    max-width: 100%;
+    max-width: 1800px;
+    top: 0;
+    left: 0;
+    right: 0;
+    /* border: 1px solid; */
 }
 
 img {
     max-width: 100%;
     display: block;
+}
+
+main {
+    /* border: 1px solid; */
+}
+
+.nails-hero {
+    display: grid;
+    grid-template-areas: hero;
+    justify-content: center;
+    position: relative;
+    isolation: isolate;
+    /* border: 1px solid; */
+
+    .header {
+        /* margin-inline-start: calc(90vw - 70%); */
+        /* margin-block-start: 10rem; */
+        grid-area: hero;
+        z-index: 1;
+        padding-inline-start: 1rem;
+        backdrop-filter: blur(5px);
+        --webkit-backdrop-filter: blur(5px);
+        border-radius: 10px;
+        justify-self: start;    
+        align-self: start;
+        padding: 1rem;
+        /* border: 1px solid black; */
+        border-radius: 10px;
+        /* color: #fff; */
+        h1 {
+            font-size: clamp(1.8rem, calc(4.125vw + 1.2rem), 6rem);
+        }
+
+        h2 {
+            font-size: clamp(1rem, calc(1vw + 0.8rem), 2rem);
+        }
+    }
+
+    .image {
+        margin: 0 auto;
+        grid-area: hero;
+        
+        img {
+            object-fit: cover;
+            object-position: center;
+            display: block;
+            margin: 0 auto;
+        
+        };
+
+        /* position: fixed; */
+        /* top: 0; */
+        /* left: 0; */
+        /* right: 0; */
+    }
+
+
 }
 
 .accordion {
@@ -22,18 +83,43 @@ img {
     overflow: hidden;
     padding: var(--_panel-padding);
 
-    transition: flex-basis 500ms;
+    /* transition: flex-basis 500ms; */
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .accordion-panel {
+        transition: flex-basis 500ms;
+    }
 }
 
 .accordion-panel:has([aria-expanded="true"]) {
-    flex-basis: clamp(40rem, 70vh, 50rem);
+    flex-basis: clamp(30rem, 70vh, 50rem);
     overflow: auto;
 }
 
 .accordion-trigger {
     border: 0;
     background: transparent;
-    font-size: calc(var(--_button-size) / 2);      
+    font-size: calc(var(--_button-size) / 2);
+}
+
+/* tabs */
+[role="tablist"] {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+[aria-selected="true"] {
+    text-decoration-thickness: 0.25rem;
+    text-underline-offset: 0.5rem;
+color: orangered;
+}
+
+#gallery {
+    min-height: 80vh;
 }
 
 /* inner accordion */
@@ -41,7 +127,7 @@ img {
 .service-wrapper {
     /* background-color: red; */
     max-width: 50rem;
-    margin-inline: auto;
+    /* margin-inline: auto; */
     padding-inline: 1rem;
 }
 
@@ -56,7 +142,7 @@ img {
 
 .service-accordion-panel {
     /* background */
-    background-color: rgba(255,255,255,0.2);
+    background-color: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(2px);
 
 
@@ -65,9 +151,14 @@ img {
     overflow: hidden;
     padding: var(--_panel-padding);
     border-radius: calc(((var(--_panel-padding) * 2) + var(--_button-size)) / 2);
+    /* transition: flex-basis 500ms; */
 
-    transition: flex-basis 500ms;
+}
 
+@media (prefers-reduced-motion: no-preference) {
+    .service-accordion-panel {
+        transition: flex-basis 500ms;
+    }
 }
 
 .service-accordion-trigger {
@@ -79,16 +170,22 @@ img {
 }
 
 .service-accordion-panel:has([aria-expanded="true"]) {
-    flex-basis: clamp(15rem, 52vh, 25rem);
+    flex-basis: clamp(20rem, 60vh, 40rem);
     /* opacity: 1; */
     overflow: auto;
 }
 
 .service-accordion-content {
-    /* opacity: 0; */
-
-    transition: opacity 500ms;
+    opacity: 0;
+    transform: translateY(2rem);
+    transition: transform 500ms, opacity 500ms;
 }
+
+.service-accordion-panel:has([aria-expanded="true"]) .service-accordion-content {
+    opacity: 1;
+    transform: translateY(0)
+}
+
 
 table {
     margin-top: .2rem;
@@ -107,6 +204,25 @@ table {
     padding: .4rem;
 }
 
+@media (min-width: 51em) {
+    .accordion {
+        flex-direction: row;
+        /* background-color: red; */
+        margin-inline: auto;
+    }
 
+    .accordion-panel {
+        /* background-color: blue; */
+        display: flex;
+    }
 
+    .accordion-trigger {
+        writing-mode: vertical-lr;
+        text-orientation: sideways;
+    }
 
+    table {
+        font-size: 1.2rem;
+        color: #333333;
+    }
+}

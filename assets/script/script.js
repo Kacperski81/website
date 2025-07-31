@@ -41,7 +41,7 @@ function toggleAccordion(panelToActivate) {
 
 
     panelToActivate.parentElement.querySelectorAll(".accordion-panel").forEach((panel) => {
-        if(panel.querySelector(".service-accordion-content")) {
+        if (panel.querySelector(".service-accordion-content")) {
 
             panel.querySelector(".service-accordion-panel").scrollTop = 0;
 
@@ -79,9 +79,10 @@ function toggleServiceAccordion(servicePanelToActivate) {
 
     const clickedButton = servicePanelToActivate.querySelector(".service-accordion-trigger");
     const clickedContent = servicePanelToActivate.querySelector(".service-accordion-content");
-
     const isExpanded = clickedButton.getAttribute("aria-expanded") === "true";
-    clickedButton.setAttribute("aria-expanded", !isExpanded);
+    if (clickedButton.getAttribute("aria-expanded") === "false") {
+        clickedButton.setAttribute("aria-expanded", !isExpanded);
+    }
 
     clickedContent.setAttribute("aria-hidden", isExpanded);
     servicePanelToActivate.parentElement.querySelectorAll(".service-accordion-panel").forEach((panel) => {
